@@ -1,27 +1,27 @@
 @font-face {
   font-family: "TT-Lakes";
-  src: url("/fonts/TTLakes-Regular.woff2") format("woff2");
+  src: url("./fonts/TTLakes-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "TT-Lakes";
-  src: url("/fonts/TTLakes-Medium.woff2") format("woff2");
+  src: url("./fonts/TTLakes-Medium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "TT-Lakes";
-  src: url("/fonts/TTLakes-DemiBold.woff2") format("woff2");
+  src: url("./fonts/TTLakes-DemiBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "TT-Lakes";
-  src: url("/fonts/TTLakes-Bold.woff2") format("woff2");
+  src: url("./fonts/TTLakes-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: bold;
   font-display: swap;
@@ -234,7 +234,7 @@ body {
   width: 8px;
   height: 10px;
   padding-inline: 7px;
-  background: url(/icons/down_arrow.svg) center/contain no-repeat;
+  background: url(./icons/down_arrow.svg) center/contain no-repeat;
 }
 
 @media (min-width: 768px) {
