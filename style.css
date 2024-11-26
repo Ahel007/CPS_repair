@@ -1,0 +1,362 @@
+@font-face {
+  font-family: "TT-Lakes";
+  src: url("/fonts/TTLakes-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT-Lakes";
+  src: url("/fonts/TTLakes-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT-Lakes";
+  src: url("/fonts/TTLakes-DemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT-Lakes";
+  src: url("/fonts/TTLakes-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+:where(ul[class]) {
+  list-style: none;
+}
+
+:where(address[class]) {
+  font-style: normal;
+}
+
+p {
+  --paragraphMarginBottom: 24px;
+
+  margin-block: 0;
+}
+
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+:has(:target) {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+svg *[fill] {
+  fill: currentColor;
+}
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+svg * {
+  transition-property: fill, stroke;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+figure {
+  margin: 0;
+}
+body {
+  font-family: "TT-lakes";
+}
+::before,
+::after {
+  font-size: 16px;
+}
+.header {
+  display: flex;
+  padding: 18px;
+}
+.header--border {
+  border-bottom: #d9fff5 solid 1px;
+}
+
+.button--background--remove {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.button--hide {
+  display: none;
+}
+.button--margin--standart {
+  margin-right: 16px;
+}
+.button--margin--huge {
+  margin-right: 42px;
+}
+
+.button--position--right {
+  margin-left: auto;
+}
+.button--position--right {
+  margin-left: auto;
+}
+.button--position--normal {
+  position: relative;
+}
+
+.repair-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -22px;
+  top: 10px;
+  width: 2px;
+  height: 32px;
+  background-color: #eaeaea;
+}
+.main {
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+.main__header {
+  font-size: 28px;
+  padding-left: 16px;
+  padding-top: 20px;
+  margin-bottom: 24px;
+}
+.main__header::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  display: block;
+  height: 40px;
+  width: 8px;
+  background-color: #41f6d7;
+  border-radius: 20px;
+}
+
+.nav-bar__list {
+  display: flex;
+  align-items: baseline;
+  overflow-x: auto;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+.nav-bar__item {
+  min-width: max-content;
+  font-weight: 500;
+  color: #7e7e82;
+  padding: 6px 8px;
+}
+.nav-bar__item--active {
+  border: #b8ffec solid 2px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-bottom: 7px;
+}
+.repaired-devices__text {
+  padding-left: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.repaired-devices__button-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+.repaired-devices__button-more::before {
+  content: "";
+  width: 8px;
+  height: 10px;
+  padding-inline: 7px;
+  background: url(/icons/down_arrow.svg) center/contain no-repeat;
+}
+
+@media (min-width: 768px) {
+  .button--hide {
+    display: block;
+  }
+
+  .button--position--normal {
+    margin-left: 0;
+  }
+  .main__header {
+    margin-bottom: 32px;
+  }
+  .nav-bar__list {
+    margin-bottom: 20px;
+  }
+  .repaired-devices {
+    display: flex;
+    padding-right: 25px;
+    gap: 50px;
+  }
+  .repaired-devices__text {
+    margin-bottom: 10px;
+    padding-left: 24px;
+  }
+  .repaired-devices__text::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера";
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .repaired-devices__button-more {
+    margin-bottom: 0;
+    padding-left: 25px;
+  }
+  .repaired-devices__image {
+    min-width: 360px;
+    height: 208px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 1120px) {
+  .header--position--right {
+    position: absolute;
+    right: 0;
+    padding-right: 32px;
+    padding-top: 42px;
+  }
+  .main__header{
+    padding-top: 42px;
+  }
+  .button--margin--big {
+    margin-right: 32px;
+  }
+
+  .button--hide {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .burger-button {
+    display: none;
+  }
+
+  .button--position--right {
+    margin-left: auto;
+  }
+
+  .repair-button::before {
+    content: "Оставить заявку";
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: #F8F8F8;
+    font-weight: 500;
+    margin-right: 8px;
+  }
+
+  .check-status-button::before {
+    content: "Статус ремонта";
+    font-weight: 500;
+    margin-right: 8px;
+  }
+
+  .button--position--normal {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+
+  .check-status-button {
+    display: flex;
+    align-items: center;
+  }
+
+  .header--border {
+    border-bottom: none;
+  }
+  .repaired-devices__text{
+   padding-left: 34px;
+  }
+  .repaired-devices__text::after {
+    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
+  }
+  .nav-bar__list {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-left: 32px;
+    
+  }
+  .nav-bar__item {
+    padding: 8px 22px;
+  }
+  .repaired-devices {
+    gap: 30px;
+  }
+  .repaired-devices__image {
+    min-width: 535px;
+    height: auto;
+  }
+}
