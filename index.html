@@ -11,12 +11,12 @@
     <header class="header header--border header--position--right">
       <button
         type="button"
-        class="burger-button button--background--remove button--margin--standart"
+        class="button button--margin--standart button--hide button--vision"
       >
         <img
           src="./icons/burger.svg"
           alt="Открыть меню"
-          class="burger-button__image"
+          class="button__burger-image"
           width="40"
           height="40"
         />
@@ -24,7 +24,7 @@
 
       <a class="logo">
         <img
-          src="./images/Group.png"
+          src="./icons/logo.svg"
           alt="CPS логотип"
           class="logo__image"
           width="97"
@@ -33,12 +33,12 @@
 
       <button
         type="button"
-        class="call-button button--background--remove button--hide button--margin--standart button--position--right"
+        class="button button--hide button--margin--standart button--position--right"
       >
         <img
           src="./icons/call.svg"
           alt="Позвонить"
-          class="call-button__image"
+          class="button__call-image"
           width="40"
           height="40"
         />
@@ -46,12 +46,12 @@
 
       <button
         type="button"
-        class="chat-button button--background--remove button--hide button--margin--standart"
+        class="button button--hide button--margin--standart"
       >
         <img
           src="./icons/chat.svg"
           alt="Перейти в чат"
-          class="chat-button__image"
+          class="button__chat-image"
           width="40"
           height="40"
         />
@@ -59,12 +59,12 @@
 
       <button
         type="button"
-        class="profile-button button--background--remove button--hide button--margin--huge"
+        class="button button--hide button--margin--huge"
       >
         <img
           src="./icons/profile.svg"
           alt="Ваш профиль"
-          class="profile-button__image"
+          class="button__profile-image"
           width="40"
           height="40"
         />
@@ -72,24 +72,24 @@
 
       <button
         type="button"
-        class="repair-button button--background--remove button--margin--standart button--margin--big button--position--right button--position--normal"
+        class="button button--margin--standart button--margin--big button--position--right button--position--normal button--content-repair--before"
       >
         <img
           src="./icons/repair.svg"
           alt="Оставить заявку на ремонт"
-          class="repair-button__image"
+          class="button__repair-image"
           width="40"
           height="40"
         />
       </button>
       <button
         type="button"
-        class="check-status-button button--background--remove"
+        class="button button--content-check-status--before button--position--normal"
       >
         <img
           src="./icons/check-status.svg"
           alt="Узнать статус ремонта"
-          class="check-status-button__image"
+          class="button__check-status-image"
           width="40"
           height="40"
         />
@@ -99,26 +99,39 @@
       <h1 class="main__header">Услуги и сервисы</h1>
       <nav class="nav-bar">
         <ul class="nav-bar__list">
-          <button type="button" class="button--background--remove">
-            <li class="nav-bar__item nav-bar__item--active">
+          <li class="nav-bar__item nav-bar__item--active">
+            <button type="button" class="">
               Ремонтируемые устройства
-            </li>
-          </button>
-          <button type="button" class="button--background--remove">
-            <li class="nav-bar__item">Ремонтируемые бренды</li>
-          </button>
-          <button type="button" class="button--background--remove">
-            <li class="nav-bar__item">Цены на услуги</li>
-          </button>
-          <button type="button" class="button--background--remove">
-            <li class="nav-bar__item">Адреса сервисных центров</li>
-          </button>
-          <button type="button" class="button--background--remove">
-            <li class="nav-bar__item">Специальные цены</li>
-          </button>
-          <button type="button" class="button--background--remove">
-            <li class="nav-bar__item">Отзывы</li>
-          </button>
+            </button>
+          </li>
+          <li class="nav-bar__item">
+            <button type="button" class="">
+              Ремонтируемые бренды
+            </button>
+          </li>
+          <li class="nav-bar__item">
+            <button type="button" class="">
+              Цены на услуги
+            </button>
+          </li>
+
+          <li class="nav-bar__item">
+            <button type="button" class="">
+              Адреса сервисных центров
+            </button>
+          </li>
+
+          <li class="nav-bar__item">
+            <button type="button" class="">
+              Специальные цены
+            </button>
+          </li>
+
+          <li class="nav-bar__item">
+            <button type="button" class="">
+              Отзывы
+            </button>
+          </li>
         </ul>
       </nav>
       <section class="repaired-devices">
@@ -129,17 +142,16 @@
             официальной гарантией производителя.
           </p>
           <button
-            class="repaired-devices__button-more button--background--remove"
+            class="repaired-devices__button-more "
           >
             <span>Читать далее</span>
           </button>
         </div>
         <figure>
           <img
-            src="./images/Photo_ad_logo.jpg"
+            src="./images/photo_ad_logo.png"
             alt="Фото вывески с логотипом"
             class="repaired-devices__image"
-            height="176"
           />
         </figure>
       </section>

@@ -84,6 +84,12 @@ textarea,
 select,
 button {
   font: inherit;
+  color: inherit;
+}
+button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
 }
 
 html {
@@ -139,15 +145,16 @@ body {
   border-bottom: #d9fff5 solid 1px;
 }
 
-.button--background--remove {
-  background-color: transparent;
-  padding: 0;
-  border: none;
-}
-
 .button--hide {
   display: none;
 }
+.button--vision {
+  display: block;
+}
+.logo {
+  position: relative;
+}
+
 .button--margin--standart {
   margin-right: 16px;
 }
@@ -165,7 +172,7 @@ body {
   position: relative;
 }
 
-.repair-button::before {
+.button--content-repair--before::before {
   content: "";
   display: block;
   position: absolute;
@@ -238,6 +245,19 @@ body {
 }
 
 @media (min-width: 768px) {
+  .logo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+  }
+  .button__burger-image{
+    margin-right: 26px;
+  }
   .button--hide {
     display: block;
   }
@@ -273,7 +293,6 @@ body {
   }
   .repaired-devices__image {
     min-width: 360px;
-    height: 208px;
     border-radius: 10px;
   }
 }
@@ -284,7 +303,7 @@ body {
     padding-right: 32px;
     padding-top: 42px;
   }
-  .main__header{
+  .main__header {
     padding-top: 42px;
   }
   .button--margin--big {
@@ -299,25 +318,21 @@ body {
     display: none;
   }
 
-  .burger-button {
-    display: none;
-  }
-
   .button--position--right {
     margin-left: auto;
   }
 
-  .repair-button::before {
+  .button--content-repair--before::before {
     content: "Оставить заявку";
     position: static;
     width: auto;
     height: auto;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     font-weight: 500;
     margin-right: 8px;
   }
 
-  .check-status-button::before {
+  .button--content-check-status--before::before {
     content: "Статус ремонта";
     font-weight: 500;
     margin-right: 8px;
@@ -329,16 +344,11 @@ body {
     align-items: center;
   }
 
-  .check-status-button {
-    display: flex;
-    align-items: center;
-  }
-
   .header--border {
     border-bottom: none;
   }
-  .repaired-devices__text{
-   padding-left: 34px;
+  .repaired-devices__text {
+    padding-left: 34px;
   }
   .repaired-devices__text::after {
     content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
@@ -347,16 +357,14 @@ body {
     flex-wrap: wrap;
     margin-bottom: 0;
     padding-left: 32px;
-    
   }
   .nav-bar__item {
     padding: 8px 22px;
   }
   .repaired-devices {
-    gap: 30px;
+    gap: 36px;
   }
   .repaired-devices__image {
-    min-width: 535px;
-    height: auto;
+    min-width: 530px;
   }
 }
