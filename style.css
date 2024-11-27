@@ -171,7 +171,24 @@ body {
 .button--position--normal {
   position: relative;
 }
-
+.button--icons--center {
+  margin-inline: auto;
+}
+.icons-wrapper {
+  background-color: #FF3E79;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.icons-wrapper--padding-top--ten{
+  padding-top: 10px;
+}
+.icons-wrapper--padding-top--eleven{
+  padding-top: 11px;
+}
+.icons-wrapper--padding-top--twelve{
+  padding-top: 12px;
+}
 .button--content-repair--before::before {
   content: "";
   display: block;
@@ -255,13 +272,12 @@ body {
     height: 32px;
     background-color: #eaeaea;
   }
-  .button__burger-image{
-    margin-right: 26px;
-  }
   .button--hide {
     display: block;
   }
-
+  .icons-wrapper--margin-right {
+    margin-right: 26px;
+  }
   .button--position--normal {
     margin-left: 0;
   }
