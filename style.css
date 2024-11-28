@@ -229,10 +229,20 @@ body {
 .nav-bar__list {
   display: flex;
   align-items: baseline;
+  position: relative;
   overflow-x: auto;
   padding-left: 16px;
   padding-bottom: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+}
+.nav-bar__list::after {
+  content: "";
+  width: 24px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(270deg, #f8f8f8 0.04%, #f8f8f800 100%);
 }
 .nav-bar__item {
   min-width: max-content;
@@ -240,7 +250,7 @@ body {
   color: #7e7e82;
 }
 .nav-bar__button {
-  padding: 6px 8px;
+  padding: 8px 16px;
 }
 .nav-bar__button:hover {
   background-color: #8f8f921e;
@@ -296,7 +306,7 @@ body {
     margin-bottom: 32px;
   }
   .nav-bar__list {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
   .repaired-devices {
     display: flex;
@@ -394,8 +404,11 @@ body {
     margin-bottom: 0;
     padding-left: 32px;
   }
+  .nav-bar__list::after{
+    display: none;
+  }
   .nav-bar__button {
-    padding: 8px 22px;
+    padding: 8px 20px;
   }
   .repaired-devices {
     gap: 36px;
