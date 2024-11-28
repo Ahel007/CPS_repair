@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="style.css" />
     <title>CPS-repair</title>
   </head>
-  <body>
-    <header class="header header--border header--position--right">
+  <body> <div class="container">
+    <header class="header header--border">
       <button
         type="button"
         class="button button--margin--standart button--hide button--vision"
       >
-      <div class="icons-wrapper icons-wrapper--margin-right icons-wrapper--padding-top--twelve">
-        <img
-          src="./icons/burger.svg"
-          alt="Открыть меню"
-          class="button__burger-image"
-        />
-      </div>
+        <div
+          class="icons-wrapper icons-wrapper--margin-right icons-wrapper--padding-top--twelve"
+        >
+          <img
+            src="./icons/burger.svg"
+            alt="Открыть меню"
+            class="button__burger-image"
+          />
+        </div>
       </button>
 
       <a class="logo">
@@ -35,63 +37,61 @@
         type="button"
         class="button button--hide button--margin--standart button--position--right"
       >
-      <div class="icons-wrapper icons-wrapper--padding-top--eleven">
-        <img
-          src="./icons/call.svg"
-          alt="Позвонить"
-          class="button__call-image"
-        />
-      </div>
+        <div class="icons-wrapper icons-wrapper--padding-top--eleven">
+          <img
+            src="./icons/call.svg"
+            alt="Позвонить"
+            class="button__call-image"
+          />
+        </div>
       </button>
 
       <button
         type="button"
         class="button button--hide button--margin--standart"
       >
-      <div class="icons-wrapper icons-wrapper--padding-top--eleven">
-        <img
-          src="./icons/chat.svg"
-          alt="Перейти в чат"
-          class="button__chat-image"
-        />
-      </div>
+        <div class="icons-wrapper icons-wrapper--padding-top--eleven">
+          <img
+            src="./icons/chat.svg"
+            alt="Перейти в чат"
+            class="button__chat-image"
+          />
+        </div>
+      </button>
+
+      <button type="button" class="button button--hide button--margin--huge">
+        <div class="icons-wrapper icons-wrapper--padding-top--ten">
+          <img
+            src="./icons/profile.svg"
+            alt="Ваш профиль"
+            class="button__profile-image"
+          />
+        </div>
       </button>
 
       <button
         type="button"
-        class="button button--hide button--margin--huge "
+        class="button button--margin--standart button--position--right button--position--normal button--content-repair--before button--repair--position-left"
       >
-      <div class="icons-wrapper icons-wrapper--padding-top--ten ">
-        <img
-          src="./icons/profile.svg"
-          alt="Ваш профиль"
-          class="button__profile-image"
-        /></div>
-      </button>
-
-      <button
-        type="button"
-        class="button button--margin--standart button--margin--big button--position--right button--position--normal button--content-repair--before"
-      >
-      <div class="icons-wrapper icons-wrapper--padding-top--ten">
-        <img
-          src="./icons/repair.svg"
-          alt="Оставить заявку на ремонт"
-          class="button__repair-image"
-        />
-      </div>
+        <div class="icons-wrapper icons-wrapper--padding-top--ten">
+          <img
+            src="./icons/repair.svg"
+            alt="Оставить заявку на ремонт"
+            class="button__repair-image"
+          />
+        </div>
       </button>
       <button
         type="button"
-        class="button button--content-check-status--before button--position--normal"
+        class="button button--content-check-status--before button--position--normal button--check-status--position-right"
       >
-      <div class="icons-wrapper icons-wrapper--padding-top--ten">
-        <img
-          src="./icons/check-status.svg"
-          alt="Узнать статус ремонта"
-          class="button__check-status-image"
-        />
-      </div>
+        <div class="icons-wrapper icons-wrapper--padding-top--ten">
+          <img
+            src="./icons/check-status.svg"
+            alt="Узнать статус ремонта"
+            class="button__check-status-image"
+          />
+        </div>
       </button>
     </header>
     <main class="main">
@@ -99,25 +99,35 @@
       <nav class="nav-bar">
         <ul class="nav-bar__list">
           <li class="nav-bar__item nav-bar__item--active">
-            <button type="button" class="">Ремонтируемые устройства</button>
+            <button type="button" class="button nav-bar__button">
+              Ремонтируемые устройства
+            </button>
           </li>
           <li class="nav-bar__item">
-            <button type="button" class="">Ремонтируемые бренды</button>
+            <button type="button" class="button nav-bar__button">
+              Ремонтируемые бренды
+            </button>
           </li>
           <li class="nav-bar__item">
-            <button type="button" class="">Цены на услуги</button>
-          </li>
-
-          <li class="nav-bar__item">
-            <button type="button" class="">Адреса сервисных центров</button>
-          </li>
-
-          <li class="nav-bar__item">
-            <button type="button" class="">Специальные цены</button>
+            <button type="button" class="button nav-bar__button">
+              Цены на услуги
+            </button>
           </li>
 
           <li class="nav-bar__item">
-            <button type="button" class="">Отзывы</button>
+            <button type="button" class="button nav-bar__button">
+              Адреса сервисных центров
+            </button>
+          </li>
+
+          <li class="nav-bar__item">
+            <button type="button" class="button nav-bar__button">
+              Специальные цены
+            </button>
+          </li>
+
+          <li class="nav-bar__item">
+            <button type="button" class="button nav-bar__button">Отзывы</button>
           </li>
         </ul>
       </nav>
@@ -128,7 +138,7 @@
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
             официальной гарантией производителя.
           </p>
-          <button class="repaired-devices__button-more">
+          <button class="repaired-devices__button-more button">
             <span>Читать далее</span>
           </button>
         </div>
@@ -141,5 +151,6 @@
         </figure>
       </section>
     </main>
+  </div>
   </body>
 </html>
